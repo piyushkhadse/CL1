@@ -1,0 +1,39 @@
+student@PUN:~$ python naiveBayes.py 
+Input Dataset is: 
+(1L, 'youth', 'high', 'no', 'fair', 'no')
+(2L, 'youth', 'high', 'no', 'excellent', 'no')
+(3L, 'middle_aged', 'high', 'no', 'fair', 'yes')
+(4L, 'senior', 'medium', 'no', 'fair', 'yes')
+(5L, 'senior', 'low', 'yes', 'fair', 'yes')
+(6L, 'senior', 'low', 'yes', 'excellent', 'no')
+(7L, 'middle_aged', 'low', 'yes', 'excellent', 'yes')
+(8L, 'youth', 'medium', 'no', 'fair', 'no')
+(9L, 'youth', 'low', 'yes', 'fair', 'yes')
+(10L, 'senior', 'medium', 'yes', 'fair', 'yes')
+(11L, 'youth', 'medium', 'yes', 'excellent', 'yes')
+(12L, 'middle_aged', 'medium', 'no', 'excellent', 'yes')
+(13L, 'middle_aged', 'high', 'yes', 'fair', 'yes')
+(14L, 'senior', 'medium', 'no', 'excellent', 'no')
+
+Enter the new sample X
+Age 'youth','middle_aged','senior': youth 
+Income 'low','medium','high': medium
+Student 'yes', 'no': yes
+Credit Rating 'fair', 'excellent': fair
+
+X = < youth , medium , yes , fair >
+
+P(X|yes) =  0.222222222222  *  0.444444444444  *  0.666666666667  *  0.666666666667
+P(X|yes) =  0.0438957475995
+
+P(X|no) =  0.6  *  0.4  *  0.2  *  0.4
+P(X|no) =  0.0192
+
+P(X|yes) * P(yes) =  0.0438957475995  *  0.642857142857
+P(X|yes) * P(yes) =  0.0282186948854
+
+P(X|no) * P(no) =  0.0192  *  0.357142857143
+P(X|no) * P(no) =  0.00685714285714
+
+Buys_Computer = 'yes'
+student@PUN:~$ 
